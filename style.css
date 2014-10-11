@@ -1,0 +1,159 @@
+aside {
+  position					: absolute;
+  top						: 0px;
+  left						: 50%;
+  padding					: 3px 0;
+  border-bottom-right-radius: 200px;
+  border-bottom-left-radius	: 200px;
+  color						: white;
+  width						: 500px;
+  text-align				: center;
+  margin					: auto -250px;
+  font-weight				: 800;
+  font-size					: 20px;
+  -webkit-transition		: all 0.4s ease-in-out;
+  -moz-transition			: all 0.4s ease-in-out;
+  -ms-transition			: all 0.4s ease-in-out;
+  -o-transition				: all 0.4s ease-in-out;
+  transition				: all 0.4s ease-in-out;
+  -webkit-transform			: translateY(-50px);
+  -moz-transform			: translateY(-50px);
+  -ms-transform				: translateY(-50px);
+  -o-transform				: translateY(-50px);
+  transform					: translateY(-50px);
+}
+aside.green {
+  background-color: rgb(0, 204, 0);
+}
+aside.red {
+  background-color: rgb(204, 0, 0) !important;
+}
+aside.show {
+	-webkit-transform	: translateY(0);
+	-moz-transform		: translateY(0);
+	-ms-transform		: translateY(0);
+	-o-transform		: translateY(0);
+	transform			: translateY(0);
+}
+
+#upload_queue {
+	width			: 250px;
+	border			: 3px solid black;
+	overflow		: hidden;
+	border-radius	: 22px;
+}
+
+.button {
+	text-align		: center;
+	padding			: 20px;
+	position		: relative;
+	overflow		: hidden;
+	background-color: #888;
+	margin			: 5px;
+	border-radius	: 16px;
+	cursor			: pointer;
+}
+
+.button:hover {
+	background-color: #777;
+}
+
+#list {
+	margin-left	: 3px;
+	margin-right: 3px;
+}
+
+#chooser input {
+	position	: absolute;
+	top			: 0px;
+	left		: 0px;
+	width		: 100%;
+	height		: 100%;
+	font-size	: 20px;
+	opacity		: 0;
+	filter		: alpha(opacity=0);
+	cursor		: pointer;
+}
+
+#upload {
+	display: none;
+}
+
+.thumb {
+	width				: 77px;
+	height				: 77px;
+	background-repeat	: no-repeat;
+	background-position	: center;
+	background-size		: contain;
+	position			: relative;
+	display				: inline-block;
+	margin				: 2px;
+	border-radius		: 5px;
+}
+
+.thumb_border {
+	width				: 75px;
+	height				: 75px;
+	border				: 1px solid black;
+}
+
+.thumb_content {
+	position			: absolute;
+	left				: 0px;
+	top					: 0px;
+	width				: 100%;
+	height				: 100%;
+}
+
+.thumb_icon {
+	padding				: 5px;
+	width				: 65px;
+	height				: 65px;
+}
+
+.thumb_button {
+	opacity				: 0;
+	background-color	: #fff;
+	cursor				: pointer;
+	border-radius		: 5px;
+	-webkit-transition	: all 0.1s ease-in-out;
+	-moz-transition		: all 0.1s ease-in-out;
+	-ms-transition		: all 0.1s ease-in-out;
+	-o-transition		: all 0.1s ease-in-out;
+	transition			: all 0.1s ease-in-out;
+}
+
+.thumb_button:hover {
+	opacity			: 0.8;
+}
+
+.progress {
+	position		: absolute;
+	left			: 0px;
+	bottom			: 0px;
+	width			: 100%;
+	height			: 0px;
+	background-color: black;
+	opacity			: 0.5;
+}
+
+.progress_failed {
+	background-color: red;
+}
+
+.spinner {
+	position: absolute;
+	left	: 30%;
+	top		: 30%;
+	width	: 40%;
+	height	: 40%;
+	opacity	: 0.8;
+}
+
+.icon-checkmark {
+	fill	: #0f0;
+}
+
+.icon-close {
+	fill	: #f00;
+}
